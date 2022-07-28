@@ -1,0 +1,216 @@
+.container.container__create {
+  margin-top: 0.2rem;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20%;
+}
+.item__create {
+  /* background: var(--color-primary); */
+  background: rgb(97, 0, 148);
+  background: radial-gradient(
+    circle,
+    rgba(97, 0, 148, 1) 0%,
+    rgba(23, 18, 31, 1) 100%
+  );
+  padding: 1.2rem;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.pre {
+  /* background: var(--color-bg-variant); */
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  /* transition: var(--transition); */
+}
+
+form {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 0.5rem; */
+  /* width: 40%; */
+  /* background-color: #353535; */
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  left: 10%;
+  /* gap: 1%; */
+}
+
+/* ==========================================image */
+.image {
+  /* display: grid; */
+  /* grid-template-columns: repeat(1, auto);
+  gap: auto;
+  justify-items: center; */
+  /* position: absolute; */
+  /* top: 5rem;
+  left: 50rem; */
+  height: 200px;
+  width: 200px;
+
+  color: #fff;
+  /* padding: 20px; */
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.img-size {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*  ====================================== input formulario*/
+.textInputWrapper {
+  position: relative;
+  width: 250px;
+  margin: 12px 5px;
+}
+
+.textInputWrapper:before {
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.textInputWrapper:before,
+.textInputWrapper:after {
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  bottom: -1px;
+  z-index: 4;
+  width: 100%;
+}
+
+.textInputWrapper:focus-within:before {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.textInputWrapper:before {
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.textInputWrapper:focus-within:before {
+  border-bottom: 1px solid var(--color-primary);
+  transform: scaleX(1);
+}
+
+.textInputWrapper:focus-within:after {
+  border-bottom: 2px solid var(--color-primary);
+  transform: scaleX(1);
+}
+
+.textInputWrapper:after {
+  content: "";
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  will-change: transform;
+  border-bottom: 2px solid var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.textInput::placeholder {
+  transition: opacity 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  opacity: 1;
+  user-select: none;
+  color: rgba(255, 255, 255, 0.582);
+}
+
+.textInputWrapper .textInput {
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0px 2px 5px rgb(35 35 35 / 30%);
+  /* max-height: 36px; */
+  background-color: #252525;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 200ms;
+  transition-property: background-color;
+  color: #e8e8e8;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px;
+  width: 100%;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+  outline: none;
+}
+
+.textInputWrapper:focus-within .textInput,
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+  background-color: #353535;
+}
+
+.textInputWrapper:focus-within .textInput::placeholder {
+  opacity: 0;
+}
+
+/* ===========================btn alert */
+.buttonx {
+  width: 160px;
+  height: 2.5em;
+  cursor: none;
+  display: flex;
+  align-items: center;
+  /* border: none; */
+  /* border-radius: 15px; */
+  color: #e62222;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.position_x {
+  position: absolute;
+  left: 44%;
+  bottom: 1.99rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20%; */
+}
+/* =======================================btn return position */
+.btn-position {
+  position: absolute;
+  left: 88%;
+  top: 90%;
+  /* margin-right: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end; */
+}
+
+.p {
+  color: #e62222;
+}
+
+.container-view {
+  margin-top: 0.3rem;
+  width: 200%;
+  margin-left: -5rem;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: auto;
+}
+
+.container-name {
+  margin-top: 0.9rem;
+  /* margin-bottom: 0.3rem; */
+}
+
+.title {
+  color: rgb(117, 29, 161);
+  font-size: 28px;
+  /* text-shadow: 2px 2px 2px rgba(19, 3, 61, 0.63); */
+}

@@ -1,0 +1,166 @@
+.loading__id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loadin__img {
+  width: 650px;
+}
+.container__pokemon {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.id__card {
+  width: 100%;
+  height: 39.5rem;
+  position: relative;
+  /* background-color: var(--color-bg-variant); */
+
+  border-radius: 1.5rem;
+}
+
+/* =============================letras chinas */
+.letras__chinas {
+  filter: drop-shadow(0 0 2px #afa9a9);
+  position: absolute;
+  font-size: 60px;
+  opacity: 60%;
+  color: var(--color-light);
+  left: 8rem;
+  margin-top: 33rem;
+}
+/* ========================================logo */
+.logo__id {
+  position: absolute;
+  top: 4rem;
+  left: 67%;
+  width: 15rem;
+}
+/* ===================================button*/
+.btn__id {
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  cursor: pointer;
+}
+.btn__id:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+.btn__id:hover {
+  color: #fff;
+}
+.btn__id:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+.btn__id:hover:before {
+  top: -30px;
+  left: -30px;
+}
+.btn__id:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
+/*================================= button position  */
+.btn__position {
+  position: absolute;
+  top: 85%;
+  left: 85%;
+}
+
+/* ================================pokemon img*/
+.pokemon__id {
+  position: absolute;
+  width: 35rem;
+  left: 5rem;
+  bottom: 6rem;
+}
+
+/* ======================================= id */
+.id {
+  opacity: 60%;
+  color: var(--color-light);
+  position: absolute;
+  left: 1.5rem;
+}
+
+/*========================================= name */
+.name_id {
+  opacity: 60%;
+  color: var(--color-light);
+  position: absolute;
+  left: 1rem;
+  top: 3rem;
+}
+
+/* ===================================== datails_poke */
+.details_poke {
+  display: grid;
+  grid-template-columns: repeat(2, 12rem);
+  gap: auto;
+  justify-items: center;
+  position: absolute;
+  top: 10rem;
+  left: 50rem;
+  width: auto;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.3);
+  background: rgb(97, 0, 148);
+  background: radial-gradient(
+    circle,
+    rgba(97, 0, 148, 1) 0%,
+    rgba(23, 18, 31, 1) 100%
+  );
+}
+/* .details_poke li {
+  margin: 20px 0;
+  padding: 10px;
+} */
+
+/* ========================================types */
+.type__poke {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: auto;
+  justify-items: center;
+  position: absolute;
+  top: 65%;
+  left: 64%;
+  width: 20rem;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.3);
+  background: rgb(97, 0, 148);
+  background: radial-gradient(
+    circle,
+    rgba(97, 0, 148, 1) 0%,
+    rgba(23, 18, 31, 1) 100%
+  );
+}
+.type__poke li {
+  margin: 20px 0;
+  padding: 10px;
+}

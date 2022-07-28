@@ -1,0 +1,22 @@
+/* span {
+  position: absolute;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 93ch;
+
+  animation: typing 6s steps(40), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+} */
+.caja {
+  position: absolute;
+  max-width: 200px;
+  height: 100px;
+  padding: 10px;
+}
+
+#maquina-escribir {
+  display: inline;
+  border-right: 3px solid black;
+}

@@ -1,0 +1,135 @@
+/* btn */
+.menu2 {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 25px;
+  cursor: pointer;
+  left: 94.5%;
+  top: 3.5%;
+}
+.menu2 .span {
+  margin: 0 auto;
+  position: relative;
+  top: 12px;
+}
+.menu2 .span:before,
+.menu2 .span:after {
+  position: absolute;
+  content: "";
+}
+.menu2 .span,
+.menu2 .span:before,
+.menu2 .span:after {
+  width: 30px;
+  height: 6px;
+  background-color: #fff;
+  display: block;
+}
+.menu2 .span:before {
+  margin-top: -12px;
+}
+.menu2 .span:after {
+  margin-top: 12px;
+}
+
+/* =============================== */
+/* btn */
+.menu {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 25px;
+  cursor: pointer;
+  left: 94.5%;
+  top: 3.5%;
+}
+.menu .span {
+  margin: 0 auto;
+  position: relative;
+  top: 12px;
+}
+.menu .span:before,
+.menu .span:after {
+  position: absolute;
+  content: "";
+}
+.menu .span,
+.menu .span:before,
+.menu .span:after {
+  width: 30px;
+  height: 6px;
+  background-color: #fff;
+  display: block;
+}
+.menu .span:before {
+  margin-top: -12px;
+}
+.menu .span:after {
+  margin-top: 12px;
+}
+/* =============================== */
+/* --- btn --- */
+
+/* example 8 */
+.example8 .span {
+  -webkit-transition: 0.2s ease 0s;
+  transition: 0.2s ease 0s;
+}
+.example8 .span:before,
+.example8 .span:after {
+  -webkit-transition-property: margin, opacity;
+  transition-property: margin, opacity;
+  -webkit-transition-duration: 0.2s, 0s;
+  transition-duration: 0.2s, 0s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.example8:hover .span {
+  width: 16px;
+  height: 16px;
+  margin-top: -5px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.example8:hover .span:before,
+.example8:hover .span:after {
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-transition-delay: 0s, 0.2s;
+  transition-delay: 0s, 0.2s;
+}
+
+.container__menu {
+  /* display: block;
+  justify-content: center;
+  align-items: center; */
+  width: 18rem;
+  height: 30rem;
+  background: rgb(97, 0, 148);
+  background: linear-gradient(
+    180deg,
+    rgba(97, 0, 148, 1) 0%,
+    rgba(23, 18, 31, 1) 100%
+  );
+  position: absolute;
+  z-index: 3;
+  top: 19%;
+  left: 78%;
+  /* display: flex; */
+  display: flex;
+  align-content: stretch;
+  /* text-align: center; */
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu-menu {
+  color: rgb(174, 141, 211);
+}

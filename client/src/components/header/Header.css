@@ -1,0 +1,15 @@
+.container__header {
+  width: auto;
+  height: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* logo Pokemon */
+.header__logo {
+  width: 15rem;
+}
+/* pokeball create */
+.header__create {
+  width: 4.5rem;
+}

@@ -1,0 +1,50 @@
+.card {
+  margin-bottom: 10%;
+  width: 190px;
+  height: 254px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: var(--color-bg-variant); */
+  background: rgb(97, 0, 148);
+  background: radial-gradient(
+    circle,
+    rgba(97, 0, 148, 1) 0%,
+    rgba(23, 18, 31, 1) 100%
+  );
+  border-radius: 12px;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+.card .img-card {
+  height: 105px;
+  margin-top: 1.5em;
+  aspect-ratio: 1;
+  border-radius: 30%;
+  background: rgb(97, 0, 148);
+  background: radial-gradient(
+    circle,
+    rgba(97, 0, 148, 1) 0%,
+    rgba(23, 18, 31, 1) 100%
+  );
+  /* background: var(--color-primary); */
+  margin-bottom: 0.4em;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card .info {
+  text-align: center;
+  margin-top: 0.4em;
+  background: linear-gradient(
+    120deg,
+    var(--color-light) 0%,
+    var(--color-light-variant) 100%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card .info > span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
