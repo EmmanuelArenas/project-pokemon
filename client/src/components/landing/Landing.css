@@ -1,0 +1,98 @@
+header {
+  height: 100vh;
+  padding-top: 1rem;
+  overflow: hidden;
+
+  background-image: url("../../assets/bg_landing.jpg");
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* CTA */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.btn__cta {
+  position: absolute;
+  left: 75%;
+  margin-top: 25%;
+}
+
+/* Pokedex */
+.image__pokedex {
+  width: 110%;
+}
+.container__poke {
+  position: absolute;
+  left: auto;
+  margin-top: 5%;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  100% {
+    border-color: transparent;
+  }
+}
+
+/* team pokedex */
+.container__team {
+  position: absolute;
+  background-color: black;
+  width: 192px;
+  height: 132px;
+  border-radius: 15px;
+  margin-top: -322px;
+  margin-left: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img__poke {
+  width: 120px;
+}
+
+/* Logo  */
+.logo {
+  position: absolute;
+  width: 40%;
+  left: 58%;
+  margin-top: 10%;
+}
+
+/*======================= Medium Devices ===================*/
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+
+/* =======================Small Devices =================*/
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  .header__socials,
+  .scroll__down,
+  .react {
+    display: none;
+  }
+}
