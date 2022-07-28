@@ -22,16 +22,17 @@ router.get("/pokemons", async (req, res) => {
   if (name) {
     const pokemonDB = await Pokemon.findAll({
       where: {
-        name: { [Op.like]: `%${name}%` },
-        // req.query.name.toLowerCase(),
+        name: name.toLowerCase(),
+        // { [Op.like]: `%${name}%` },
       },
     });
     if (pokemonDB.length) {
       return res.json(pokemonDB);
     } else {
       const pokemonsApi = await getPokemonsAPI();
-      const foundPokemon = pokemonsApi.filter((p) =>
-        p.name.includes(name.toLowerCase())
+      const foundPokemon = pokemonsApi.filter(
+        (p) => p.name === name.toLowerCase()
+        // p.name.includes(name.toLowerCase())
       );
       if (foundPokemon) {
         return res.json(foundPokemon);
