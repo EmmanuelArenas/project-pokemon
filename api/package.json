@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha -w ./tests/**/*.spec.js"
+    "test": "mocha -w ./tests/**/*.spec.js",
+    "build": "echo 'Bulding.... (not actually doing something, but usually I would)'"
   },
   "author": "Henry",
   "license": "ISC",
