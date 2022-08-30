@@ -58,7 +58,7 @@ const FilterBar = () => {
       <div>
         <div className="container__menu">
           <h4>Filter by</h4>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <select
               className="textInput"
               onChange={filterType}
@@ -81,7 +81,7 @@ const FilterBar = () => {
                   })}
             </select>
           </div>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <select
               className="textInput"
               onChange={filterCreator}
@@ -95,14 +95,14 @@ const FilterBar = () => {
           </div>
 
           <h4>Order by</h4>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <select className="textInput" onChange={order} value={selectOrder}>
               <option value="alph">Alphabetical</option>
               <option value="asc">Ascending (A-Z)</option>
               <option value="desc">Descending (Z-A)</option>
             </select>
           </div>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <select className="textInput" onChange={order} value={selectOrder}>
               <option value="attack">Attack</option>
               <option value="less">Less (-)</option>

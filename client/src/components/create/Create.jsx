@@ -74,11 +74,11 @@ const AddPokemon = () => {
       <h2 className="title">Create Pokemon</h2>
       <div className="container container__create">
         <form onSubmit={handleSubmit}>
-          <div class="textInputWrapper ">
+          <div className="textInputWrapper ">
             <input
               placeholder="Name"
               type="text"
-              class="textInput "
+              className="textInput "
               name="name"
               onChange={handleInputChange}
               value={input.name}
@@ -97,7 +97,7 @@ const AddPokemon = () => {
             ></input>
             {errors.image && <p className="p">{errors.image}</p>}
           </div>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <select
               className="textInput"
               name="type1"
@@ -122,7 +122,7 @@ const AddPokemon = () => {
             </select>
             {errors.type1 && <p className="p">{errors.type1}</p>}
           </div>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <select
               className="textInput"
               name="type2"
@@ -158,7 +158,7 @@ const AddPokemon = () => {
             ></input>
             {errors.height && <p className="p">{errors.height}</p>}
           </div>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <input
               className="textInput"
               type="text"
@@ -169,7 +169,7 @@ const AddPokemon = () => {
             ></input>
             {errors.weight && <p className="p">{errors.weight}</p>}
           </div>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <input
               className="textInput"
               type="text"
@@ -180,7 +180,7 @@ const AddPokemon = () => {
             ></input>
             {errors.hp && <p className="p">{errors.hp}</p>}
           </div>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <input
               className="textInput"
               type="text"
@@ -191,7 +191,7 @@ const AddPokemon = () => {
             ></input>
             {errors.attack && <p className="p">{errors.attack}</p>}
           </div>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <input
               className="textInput"
               type="text"
@@ -202,7 +202,7 @@ const AddPokemon = () => {
             ></input>
             {errors.defense && <p className="p">{errors.defense}</p>}
           </div>
-          <div class="textInputWrapper">
+          <div className="textInputWrapper">
             <input
               className="textInput"
               type="text"
@@ -272,7 +272,7 @@ const AddPokemon = () => {
       </div>
       <div className="position_x">
         {Object.keys(errors).length !== 0 ? (
-          <spam disabled="true" onClick={finishedForm} class="buttonx ">
+          <spam disabled="true" onClick={finishedForm} className="buttonx ">
             Complete the form
           </spam>
         ) : (

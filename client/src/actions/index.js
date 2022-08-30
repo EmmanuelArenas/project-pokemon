@@ -1,11 +1,12 @@
 import axios from "axios";
+const URL = process.env.REACT_APP_URL;
 
 // Get
 
 export function getAllPokemons() {
   return async function (dispatch) {
     try {
-      const response = await axios.get(`http://localhost:3001/pokemons`);
+      const response = await axios.get(`${URL}/pokemons`);
       dispatch({ type: "GET_ALL_POKEMONS", payload: response.data });
     } catch (error) {
       console.log("Get all pokemons:", error);
@@ -16,7 +17,7 @@ export function getAllPokemons() {
 export function getPokemonTypes() {
   return async function (dispatch) {
     try {
-      const response = await axios.get("http://localhost:3001/types");
+      const response = await axios.get(`http://localhost:3001/types`);
       dispatch({ type: "GET_POKEMON_TYPES", payload: response.data });
     } catch (error) {
       console.log("Get pokemon types:", error);

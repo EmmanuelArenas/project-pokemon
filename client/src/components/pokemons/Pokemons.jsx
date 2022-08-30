@@ -57,7 +57,11 @@ const Pokemons = () => {
           <div className="pokem">
             {showPokemons &&
               showPokemons.map((p) => (
-                <Link to={`pokemon/${p.id}`} style={{ textDecoration: "none" }}>
+                <Link
+                  key={p.id}
+                  to={`pokemon/${p.id}`}
+                  style={{ textDecoration: "none" }}
+                >
                   <Pokemon
                     name={p.name}
                     types={p.types}
