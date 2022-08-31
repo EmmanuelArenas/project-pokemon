@@ -53,7 +53,7 @@ Es una aplicación donde se pueden ver diferentes pokemons al consultar una [api
 En el frontend tiene una landing page con un botón que te lleva a home, donde se renderizan 15 cartas de diferentes pokemons, al igual que un paginado dinámico de acuerdo a la cantidad de pokemons (En primer instancia 40), cuenta con una barra de navegación que contiene el logo de pokemons, un search y el menú. El menú es desplegable y contiene los filtrados, ordenamientos y el botón que te lleva a un formulario con validaciones javascript para crear un pokemon.
 En el backend se crearon las rutas para consultar el tipo, nombre y traer a 40 pokemons desde la api, ademas de una ruta para crear pokemons que se guardan en una base de datos, donde almacena los tipos y los pokemons.
 
-**IMPORTANTE**: Para las funcionalidades de filtrado y ordenamiento NO se ocuparon los endpoints de la API externa.Alguno de los ordenamientos y filtrados se realizarón desde el frontend.
+##### IMPORTANTE: Para las funcionalidades de filtrado y ordenamiento NO se ocuparon los endpoints de la API externa.Alguno de los ordenamientos y filtrados se realizarón desde el frontend.
 
 ## Endpoints/Flags utilizados
 
@@ -61,8 +61,6 @@ En el backend se crearon las rutas para consultar el tipo, nombre y traer a 40 p
 - GET <https://pokeapi.co/api/v2/pokemon/{id}>
 - GET <https://pokeapi.co/api/v2/pokemon/{name}>
 - GET <https://pokeapi.co/api/v2/type>
-
-**IMPORTANTE**: `Para ejecutar el proyecto en tu equipo`
 
 ## Tecnologías ocupadas
 
