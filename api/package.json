@@ -8,8 +8,8 @@
     "test": "mocha -w ./tests/**/*.spec.js",
     "build": "echo 'Bulding.... (not actually doing something, but usually I would)'"
   },
-  "author": "Henry",
-  "license": "ISC",
+  "author": "emmanuel.live19@gmail.com",
+  "license": "MIT",
   "engines": {
     "node": ">=12.18.3",
     "npm": ">=6.14.6"
