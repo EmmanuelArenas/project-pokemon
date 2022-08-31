@@ -47,13 +47,11 @@ Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credencial
 
 Adicionalmente será necesario que creen desde psql una base de datos llamada `pokemon`
 
-## Enunciado
+## Descripción
 
-La idea general fue crear una aplicación en la cual se puedan ver los distintos Pokemon utilizando la api externa [pokeapi](https://pokeapi.co/) y a partir de ella poder, entre otras cosas:
-
-- Buscar pokemons
-- Filtrarlos / Ordenarlos
-- Crear nuevos pokemons
+Es una aplicación donde se pueden ver diferentes pokemons al consultar una [api](https://pokeapi.co/) externa con endpoints específicos.
+En el frontend tiene una landing page con un botón que te lleva a home, donde se renderizan 15 cartas de diferentes pokemons, al igual que un paginado dinámico de acuerdo a la cantidad de pokemons (En primer instancia 40), cuenta con una barra de navegación que contiene el logo de pokemons, un search y el menú. El menú es desplegable y contiene los filtrados, ordenamientos y el botón que te lleva a un formulario con validaciones javascript para crear un pokemon.
+En el backend se crearon las rutas para consultar el tipo, nombre y traer a 40 pokemons desde la api, ademas de una ruta para crear pokemons que se guardan en una base de datos, donde almacena los tipos y los pokemons.
 
 **IMPORTANTE**: Para las funcionalidades de filtrado y ordenamiento NO se ocuparon los endpoints de la API externa.Alguno de los ordenamientos y filtrados se realizarón desde el frontend.
 
@@ -64,7 +62,7 @@ La idea general fue crear una aplicación en la cual se puedan ver los distintos
 - GET <https://pokeapi.co/api/v2/pokemon/{name}>
 - GET <https://pokeapi.co/api/v2/type>
 
-**IMPORTANTE**: Se utilizo CSS puro
+**IMPORTANTE**: `Para ejecutar el proyecto en tu equipo`
 
 ## Tecnologías ocupadas
 
@@ -77,7 +75,7 @@ La idea general fue crear una aplicación en la cual se puedan ver los distintos
 - HTML
 - CSS
 
-## Pasos para ejecutar el proyecto en tu equipo
+### **IMPORTANTE**: `Para ejecutar el proyecto en tu equipo`
 
 ```md
     1. Forkea el repositorio
