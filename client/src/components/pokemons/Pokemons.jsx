@@ -10,7 +10,7 @@ import { getAllPokemons, getPokemonTypes } from "../../actions/index.js";
 const Pokemons = () => {
   const dispatch = useDispatch();
   const [currentPage, setCurrentPage] = useState(1);
-  const [pokemonsPerPage] = useState(16);
+  const [pokemonsPerPage] = useState(15);
   const indexOfLastPost = currentPage * pokemonsPerPage;
   const indexOfFirstPost = indexOfLastPost - pokemonsPerPage;
 
