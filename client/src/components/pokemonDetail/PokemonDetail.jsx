@@ -32,7 +32,11 @@ const PokemonDepth = () => {
           <img className="logo__id" src={LOGO} alt="Pokemon" />
           <div>
             <div className="pokemon__id">
-              <img src={pokemonByID.image} alt={pokemonByID.name} />
+              <img
+                className="size__img"
+                src={pokemonByID.image}
+                alt={pokemonByID.name}
+              />
             </div>
             <div className="item">
               <div className="letras__chinas">

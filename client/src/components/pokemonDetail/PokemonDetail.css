@@ -15,8 +15,6 @@
   width: 100%;
   height: 39.5rem;
   position: relative;
-  /* background-color: var(--color-bg-variant); */
-
   border-radius: 1.5rem;
 }
 
@@ -135,10 +133,6 @@
     rgba(23, 18, 31, 1) 100%
   );
 }
-/* .details_poke li {
-  margin: 20px 0;
-  padding: 10px;
-} */
 
 /* ========================================types */
 .type__poke {
@@ -146,7 +140,7 @@
   grid-template-columns: repeat(2, auto);
   gap: auto;
   justify-items: center;
-  position: absolute;
+  position: relative;
   top: 65%;
   left: 64%;
   width: 20rem;
@@ -163,4 +157,140 @@
 .type__poke li {
   margin: 20px 0;
   padding: 10px;
+}
+
+@media screen and (max-width: 1124px) {
+  .details_poke {
+    top: 10rem;
+    left: 33rem;
+  }
+  .pokemon__id {
+    width: 10rem;
+    left: auto;
+    bottom: 7rem;
+  }
+  .letras__chinas {
+    font-size: 40px;
+    left: 4rem;
+    margin-top: 31rem;
+  }
+  .loadin__img {
+    width: 500px;
+  }
+  .logo__id {
+    top: 2rem;
+    left: 60%;
+    width: 17rem;
+  }
+  .btn__position {
+    top: 90%;
+    left: 86%;
+  }
+  .type__poke {
+    top: 60%;
+    left: 59%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .details_poke {
+    top: 12rem;
+    left: 30rem;
+  }
+  .pokemon__id {
+    width: 15rem;
+    left: -1rem;
+    bottom: 6rem;
+  }
+  .letras__chinas {
+    font-size: 40px;
+    left: 4rem;
+    margin-top: 35rem;
+  }
+  .loadin__img {
+    width: 500px;
+  }
+  .logo__id {
+    top: 2rem;
+    left: 60%;
+    width: 17rem;
+  }
+  .btn__position {
+    top: 90%;
+    left: 86%;
+  }
+  .type__poke {
+    top: 70%;
+    left: 58%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .details_poke {
+    width: 52%;
+    top: 12rem;
+    left: 25rem;
+  }
+  .letras__chinas {
+    font-size: 40px;
+    left: 4rem;
+    margin-top: 30rem;
+  }
+  .loadin__img {
+    width: 400px;
+  }
+  .logo__id {
+    top: 2rem;
+    left: 60%;
+    width: 17rem;
+  }
+  .type__poke {
+    top: 70%;
+    left: 58%;
+  }
+  .btn__position {
+    top: 90%;
+    left: 80%;
+  }
+  .size__img {
+    width: 25rem;
+  }
+  .pokemon__id {
+    left: 1rem;
+    bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .details_poke {
+    width: 30%;
+    top: 11rem;
+    left: 30rem;
+    grid-template-columns: repeat(1, 12rem);
+  }
+  .letras__chinas {
+    display: none;
+  }
+  .loadin__img {
+    width: 400px;
+  }
+  .logo__id {
+    top: 0rem;
+    left: 40%;
+    width: 20rem;
+  }
+  .type__poke {
+    top: 80%;
+    left: 8%;
+  }
+  .btn__position {
+    top: 90%;
+    left: 80%;
+  }
+  .size__img {
+    width: 25rem;
+  }
+  .pokemon__id {
+    left: 1rem;
+    bottom: 10rem;
+  }
 }
